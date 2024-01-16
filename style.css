@@ -1,0 +1,68 @@
+/* root */
+
+:root {
+    --clr-primary-red: #ff5c5c;
+    --clr-neutral-very-dark-blue: #242942;
+    --clr-neutral-dark-grayish-blue: #5b5f71;
+    --clr-neutral-grayish-blue: #a0a1ac;
+    --clr-neutral-light-grayish-blue: #eef3f6;
+
+    --ff-title: 'Barlow condensed', sans-serif;
+    --ff-paragraph: 'Barlow', sans-serif;
+
+    --fw-400: 400;
+    --fw-700: 700;
+
+    --fs-400: 1.125rem;
+    --fs-700: 1.5rem;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1.2;
+    color: var(--clr-primary-very-dark-blue-headings);
+}
+
+ul, li {
+    list-style: none;
+}
+
+a {
+    font-size: var(--fs-400);
+    text-decoration: none;}
+
+a:hover {
+    font-weight: var(--fw-600);
+    color: var(--clr-neutral-very-dark-black-blue-footer-background);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    font-style: italic;
+    color: var(--clr-primary-red);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* general styles */
+
+body {
+    width: minmax(100%, 1440px);
+    font-family: var(--ff-body);
+    font-size: var(--fs-400);
+    font-weight: var(--fw-400);
+    color: var(--clr-neutral-dark-grayish-blue);
+    line-height: 1.6;
+ }
