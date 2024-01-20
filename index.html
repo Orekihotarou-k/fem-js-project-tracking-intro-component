@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&display=swap" rel="stylesheet">
+  <script src="script.js" defer></script>
   
   <title>Frontend Mentor | Project tracking intro component</title>
 
@@ -20,59 +21,59 @@
 </head>
 <body>
 
-  <div class="wrapper">
-    <header>
-      <div class="container container--nav">
-        <div class="navigation">
-          <div class="left-nav">
-            <img src="images/logo.svg">
+
+        <header class="size">
+          <div class="navigation split">
+            <div class="nav-left">
+              <img src="images/logo.svg" alt="project-tracking logo">
+            </div>
+            <div class="nav-right">
+              <nav class="nav-menu">
+                <ul class="nav-menu-list split">
+                  <li class="nav-menu-list--item"><a href="#">Product</a></li>
+                  <li class="nav-menu-list--item"><a href="#">Features</a></li>
+                  <li class="nav-menu-list--item"><a href="#">Pricing</a></li>
+                  <hr>
+                  <li class="nav-menu-list--item"><a href="#">Login</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="hamburger-menu">
+              <div class="hamburger-button">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+              </div>
+          </div>
           </div>
 
-          <div class="hamburger-menu">
-            <label class="hamburger-button">
-              <input type="checkbox">
-            </label>
-          </div>
+          
+        </header>
 
-          <div class="right-nav">
-            <nav class="nav-menu">
-              <ul class="nav-links">
-                <li class="nav-link--item"><a href="#">Product</a></li>
-                <li class="nav-link--item"><a href="#">Features</a></li>
-                <li class="nav-link--item"><a href="#">Pricing</a></li>
-                <li class="nav-link--item"><a href="#">Login</a></li>
-              </ul>
-            </nav>
-    
-            
-          </div>
-        </div>
-      </div>
-    </header>
-    <main>
-      <div class="container split spacer">
-        <div class="col">
-          <h1 class="section-title transform"><span>New </span>Monograph Dashboard</h1>
-          <h2 class="section-subtitle transform">Powerful insights into your team</h2>
-          <p class="section-desc">Project planning and time tracking for agile teams</p>
-          <div class="section-btns">
-            <a href="#" class="btn">Schedule a demo</a>
-            <a href="#" class="btn">to see a live preview</a>
-          </div>
-        </div>
-        <div class="col">
-          <img src="images/illustration-devices.svg" class="illustration-devices">
-        </div>
-      </div>
-    </main>
-  </div>
- 
+        <main class="container size">
+          <section class="wrapper split">
+            <div class="col spacer">
+              <h1 class="section-title title"><span>New </span>Monograph dashboard</h1>
+              <h2 class="section-subtitle title">Powerful insights into your team</h2>
+              <p class="section-description">Project planning and time tracking for agile teams</p>
+              <div class="section-buttons">
+                <a href="#">Schedule a demo</a>
+                <a href="#">to see a live preview</a>
+              </div>
+            </div>
+            <div class="col">
+              <img src="images/illustration-devices.svg" alt="illustration image of phone and laptop" class="illustration-image">
+            </div>
+          </section>
+        </main>
+
+
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="https://www.frontendmentor.io/profile/Orekihotarou-k">Levis Bohse</a>.
     </p>
   </footer>
-  <script src="script.js"></script>
+
 </body>
 </html>

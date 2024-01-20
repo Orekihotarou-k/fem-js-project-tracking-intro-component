@@ -1,22 +1,21 @@
+// select the elements 
 const hamburgerButton = document.querySelector('.hamburger-button')
-const navMenu = document.querySelector('.nav-menu')
+const navMenu = document.querySelector('.nav-menu-list')
 
-hamburgerButton.addEventListener('click', ()=> {
-    toggleMenu()
+// create an event listener to toggle the hamburger menu on and off by adding and removing the active class
+hamburgerButton.addEventListener('click', () => {
+    menuOpened()
 })
 
-function toggleMenu() {
-    isMenuOpen = false
+function menuOpened() {
+    // check if the menu contains the active class and remove it if it does. Leave it if it doesn't
 
-    if (isMenuOpen === true) {
-        hamburgerButton.classList.add('active')
-        hamburgerButton.classList.remove('inactive')
-        isMenuOpen = true
-        console.log('this works')
-    } else {
-        hamburgerButton.classList.add('inactive')
+    if (navMenu.classList.contains('active')) {
+        navMenu.classList.remove('active')
         hamburgerButton.classList.remove('active')
-        isMenuOpen = false
+    } else {
+        navMenu.classList.add('active')
+        hamburgerButton.classList.add('active')
     }
 
 }
